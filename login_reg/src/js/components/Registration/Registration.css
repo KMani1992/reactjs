@@ -1,0 +1,69 @@
+.reg-card {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.sign-in-btn {
+float: left;
+width: 20%
+}
+
+.forgot-password {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 15px;
+}
+
+.full-wid{
+  width: 90%;
+}
+
+.sign-in-header{
+  text-align: left;
+}
+
+.login-action-bar {
+  height: 70px;
+}
+
+.signin-with-exist-account {
+  border-top: 1px dotted #9E9E9E;
+
+}
+
+.exist-acc-label {
+  margin-top: -500px;
+}
+
+.exist-acc {
+  border-top: 1px solid #BDBDBD;
+  height:1px;
+  margin-top:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.exist-acc-lbl {
+  background: #fff;
+  padding-bottom: 10px;
+  position:relative;
+  top:-13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #9E9E9E;
+  font: 10px;
+}
+.exist-acc-sec {
+  clear: both;
+  float: left;
+  width: 100%;
+
+}
+
+.google-login {
+  float: left;
+  text-align: left;
+
+}

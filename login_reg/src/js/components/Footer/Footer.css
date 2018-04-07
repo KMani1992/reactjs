@@ -1,0 +1,11 @@
+.App-footer {
+  clear: both;
+  background-color: black;
+  height: 60px;;
+  color: white;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  padding: 20px;
+}

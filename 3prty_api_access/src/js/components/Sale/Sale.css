@@ -1,0 +1,65 @@
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 80%;
+  float: left;
+  margin: 0 auto;
+}
+
+.popular-item {
+  margin: 7px;
+  text-align: center;
+
+}
+
+.space-list-items {
+  list-style: none;
+}
+
+.avathar {
+width: 150px;
+border-radius: 50%;
+}
+
+.popular-rank {
+  margin: 10px;
+}
+
+.prod-card {
+  width: 350px;
+  height: 650px;
+}
+
+.order-summary {
+  width: 20%;
+  height: auto;
+  float: right;
+  clear: right;
+  overflow: hidden;
+}
+.product-list-page {
+  float: left;
+  margin-right: 7%;
+  overflow: auto;
+}
+
+.order-price-detail {
+  list-style: none;
+  text-align: left;
+  margin: 5px;
+}
+
+.order-det-item {
+  margin: 5px;
+}
+
+.place-order {
+  width: 90%;
+  margin-bottom: 7px;
+}
+
+.order-summary-title {
+text-align: center;
+}
