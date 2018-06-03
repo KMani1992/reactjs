@@ -26,3 +26,50 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+  
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  list-style: none; 
+  
+}
+
+.popular-item {
+  margin: 7px;
+  text-align: center;
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.line{
+  width: 25%;
+  height: auto;
+  background-color: lightcoral;
+  list-style: none;
+}
+
+.line-item{
+height: 30px;
+border-bottom: 1px dotted;
+width: 100%;
+margin: 2px;
+padding: 3px;
+cursor: pointer;
+}
+
+
+.chgclr{
+background-color: red;
+}
+
+.reg{
+  background-color: green;
+}

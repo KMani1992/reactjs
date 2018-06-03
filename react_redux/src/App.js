@@ -6,7 +6,7 @@ import Emp from './Emp';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Home from './Home';
 import Login from './Login';
-import Loader from './loader';
+//import Loader from './loader';
 
 import {connect }  from 'react-redux'
 import {updateUser} from './user-action'
@@ -25,13 +25,32 @@ class App extends Component {
         { id: 11, name: 'mani', salary: 1000 },
         { id: 12, name: 'kani', salary: 2000 },
         { id: 13, name: 'pani', salary: 3000 },
-      ]
+      ],
+      productslist:[
+        {name:'A'},{name:'A'},{name:'A'},{name:'A'},
+        {name:'A'},{name:'A'},{name:'A'},{name:'A'}
+       
+        ],
+        clasNm:['line-item  reg','line-item  reg','line-item reg']
     };
     this.clickBtn = this.clickBtn.bind(this);
     this.updateValue = this.updateValue.bind(this);
     this.onUpdateUser=this.onUpdateUser.bind(this);
+    this.chgStyl=this.chgStyl.bind(this);
+
+
   }
 
+chgStyl(idx){
+  console.log(idx)
+  const clsNm=this.state.clasNm;
+  clsNm.fill('line-item reg');
+  clsNm[idx]='line-item chgclr'
+
+  this.setState({clasNm:clsNm});
+
+
+}
   onUpdateUser(evt){
     this.props.onUpdateUser(evt.target.value);
   }
@@ -101,6 +120,24 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+
+<div>
+    <ul className="line">
+      <li key="1" className={this.state.clasNm[0]} onClick={()=>this.chgStyl(0)} >A</li>
+      <li key="2" className={this.state.clasNm[1]} onClick={()=>this.chgStyl(1)}>B</li>
+      <li key="3" className={this.state.clasNm[2]} onClick={()=>this.chgStyl(2)}>C</li>
+     
+    </ul>
+  </div>
+        <div>
+          <ul className="popular-list">
+            {this.state.productslist.map( (product,i) =>
+              <li key={i} className='popular-item'>
+                  <div className="box">BOX {product.name}</div>
+              </li>
+            )}
+          </ul>
+        </div>
       </div>
     );
   }
